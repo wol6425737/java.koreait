@@ -1,6 +1,6 @@
 package com.kita.first.practice;
 
-public class Practice7 {
+public class Practice07 {
 	public static void main(String[] args) {
 		// 1~6 총 6개의 메뉴 랜덤 뽑기
 		

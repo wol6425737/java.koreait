@@ -1,6 +1,6 @@
 package com.kita.first.practice;
 
-public class Practice3 {
+public class Practice03 {
 	public static void main(String[] args) {
 		//n1 (+=) n2
 		

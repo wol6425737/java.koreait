@@ -1,6 +1,6 @@
 package com.kita.first.practice;
 
-public class Practice6 {
+public class Practice06 {
 	public static void main(String[] args) {
 		//주사위굴리기 1~6
 		

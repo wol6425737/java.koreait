@@ -1,6 +1,6 @@
 package com.kita.first.practice;
 
-public class Practice2 {
+public class Practice02 {
 	public static void main(String[] args) {
 		/*
 		 * name

@@ -2,7 +2,7 @@ package com.kita.first.practice;
 
 import java.util.Scanner;
 
-public class Practice5 {
+public class Practice05 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("수학 응시 유형을 입력해 주세요: (가/나)");
