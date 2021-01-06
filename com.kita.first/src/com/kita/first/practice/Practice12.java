@@ -7,7 +7,7 @@ public class Practice12 {
 		//*
 		//*
 		//*
-		int star = 7;
+		int star = 4;
 		for(int i=1; i<=star; i++) {
 			System.out.print("*");
 		}
