@@ -26,14 +26,15 @@ public class Practice25 {
 //		메뉴를 입력하세요(0 입력 시 종료): 0
 //		합계: 3700원
 		Scanner scan = new Scanner(System.in);
-		String[] menuArr = {};
-		int[] priceArr = {};
+		String[] menuArr = {"콜라", "사이다", "캔커피","데자와","환타","웰치스"};
+		int[] priceArr = {900, 700, 400, 500, 600, 1000};
 		int num;
 		int total=0;
-
+ 
 		System.out.println("--메뉴--");
 		for(int i=0; i<menuArr.length; i++) {
 			System.out.printf("%d. %s %d원\n", i+1, menuArr[i], priceArr[i]);
+		
 		}
 
 		while(true) {
