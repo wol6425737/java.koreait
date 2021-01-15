@@ -16,6 +16,7 @@ public static void main(String[] args) {
 
 	System.out.println(n1);
 //	System.out.println(n2);
+	System.out.println(n3);
 }
 static int sum(int n1, int n2) {
 	int result = n1 + n2;
