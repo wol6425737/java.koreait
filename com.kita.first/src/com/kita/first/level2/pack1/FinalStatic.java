@@ -15,7 +15,7 @@ public final class FinalStatic {
 	static /*final*/ void printNum(int input) {
 		System.out.println(input);
 		System.out.println(n3);
-//		call();//static에 올려놓아서 void call에 static이 안붙으면 인식을 못함
+		//call();//static에 올려놓아서 void call에 static이 안붙으면 인식을 못함
 		//새로운  인스턴스가 나와서 값이 입력돼야 빨간줄 사라짐.
 	}
 	//메소드에 final 붙이면 override불가능
