@@ -22,14 +22,17 @@ public class Test {
 //		animal.crying();
 //		animal = dog;
 //		animal.crying();
+//		boolean result1 = animal instanceof Dog;
+//		System.out.println(result1);
 //		//animal.barking();  animal클래스에 없어서;; 안됨
-//		
+//		Dog dog1 = (Dog)animal; //animal을 Dog객체로 강제 형변환
+//		dog1.barking();
 //		System.out.println(animal);
 //		System.out.println(cat);
 //		System.out.println(animal == cat);
 		Student minsu = new Student();
 		
-		for(int i=1; i<=5; i++) {
+		for(int i=1; i<=10; i++) {
 			int result = minsu.readBooks();
 			switch(result) {
 			case 1://minsu가 book1을 다 읽었을 경우
@@ -39,6 +42,7 @@ public class Test {
 			case 2:
 				minsu.book2 = new MajorTextBook(7);
 				System.out.println("새 전공서적을 가져왔다.");
+				break;
 			case 3:
 				minsu.book3 = new Book(4);
 				System.out.println("새 책을 가져왔다.");
