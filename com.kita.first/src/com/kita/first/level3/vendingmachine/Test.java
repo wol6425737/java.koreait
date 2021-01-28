@@ -34,7 +34,7 @@ public class Test {
 
 		
 		System.out.println("--메뉴--");
-		for(int i=1; i<+len; i++) {
+		for(int i=1; i<=len; i++) {
 			print.printMenu(menu, i);
 			
 		}
@@ -47,7 +47,7 @@ public class Test {
 			myNum=game.inputNum();
 			
 			//입력 받은 번호 분기 가르기 기능
-			if(myNum<1 || myNum>6) {
+			if(myNum<0 || myNum>len) {
 				System.out.println("범위 내의 숫자를 입력하세요.");
 				continue;
 			} else if(myNum == 0) {

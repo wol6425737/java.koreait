@@ -15,7 +15,7 @@ public class Menu {
 	public Menu(int len) {
 		menuArr = new String[len];
 		priceArr = new int[len];
-		System.out.printf("%d칸짜리 배열이 생성되었습니다.\n");
+		System.out.printf("%d칸짜리 배열이 생성되었습니다.\n",len);
 	}
 	
 	//메소드
@@ -45,7 +45,7 @@ public class Menu {
 			String str = scan.next();
 			menuArr[i] = str;
 		}
-		scan.close();
+		
 		
 	}
 	//가격배열에 순차적으로 값 입력
@@ -62,7 +62,7 @@ public class Menu {
 			}
 			priceArr[i] = num;
 		}
-		scan.close();
+		
 		
 	}
 }
