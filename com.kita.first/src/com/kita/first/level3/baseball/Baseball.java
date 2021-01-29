@@ -21,6 +21,7 @@ public class Baseball {
 	public int getRNum(int idx) {
 		return rArr[idx];
 	}
+
 	private void setRandom() {
 		
 		int max = 9;

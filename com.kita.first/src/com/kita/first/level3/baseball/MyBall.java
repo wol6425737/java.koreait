@@ -1,5 +1,6 @@
 package com.kita.first.level3.baseball;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBall {
@@ -21,19 +22,28 @@ public class MyBall {
 		myArr = new int[gameCnt];
 		scan = new Scanner(System.in);
 	}
-	int getMyNum(int idx){
+	public int getMyNum(int idx){
 		return myArr[idx];
 	}
 	
-	void setNumbers() {
-		int myArr[] = new int[gameCnt];
+	
+	//숫자 입력 받는 기능
+	public void setNumbers() {
 		int max = 9;
 		int min = 1;
 		
-		Scanner scan = new Scanner(System.in);
-		for(int i=0; i<gameCnt; i++) {
+		for(int i=0; i<myArr.length; i++) {
 			System.out.printf("값%d: ", i+1);
-			myArr[i] = scan.nextInt();
+			String val = scan.next();
+			try {
+				myArr[i] = Integer.parseInt(val);
+			}
+				catch(Exception e) {
+					i--;
+					System.out.println("1~9까지의 숫자값을 입력해주세요");
+					continue;
+				}
+			
 			if(max <myArr[i] || min > myArr[i]) {
 				System.out.println("범위 밖의 숫자입니다.");
 				i--;
@@ -47,6 +57,7 @@ public class MyBall {
 				}
 			}
 		}
+		System.out.println(Arrays.toString(myArr));
 		
 	}
 }

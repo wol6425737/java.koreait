@@ -21,9 +21,9 @@ public class TryCatch {
 		System.out.println(1 + 2 + 3);
 		System.out.println(1 + 2 + "3");
 		
-		Animal ani = new Animal();
+		//Animal ani = new Animal();
 		Cat cat = new Cat();
-		ani = cat;
+		//ani = cat;
 		
 		try {
 			//Cat dog = (Cat)ani;

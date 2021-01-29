@@ -13,11 +13,14 @@ public class Game {
 		Baseball ball = new Baseball(gameCnt);
 		MyBall myBall = new MyBall(gameCnt);
 		
-		myBall.setNumbers();
-//		do {
-//			myBall.setNumbers();
-//			
-//		}while(Checker.check(gameCnt, ball, myBall));
+		
+		System.out.println("야구게임 시작!");
+		
+	
+		do {
+			myBall.setNumbers();
+			
+		}while(Checker.check(gameCnt, ball, myBall));
 		
 		System.out.println("야구게임 종료!");
 	}

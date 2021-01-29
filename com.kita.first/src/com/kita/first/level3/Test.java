@@ -5,7 +5,9 @@ package com.kita.first.level3;
 public class Test {
 
 	public static void main(String[] args) {
-		Animal ani = new Animal();
+		
+		
+//		Animal ani = new Animal();
 		
 
 		
