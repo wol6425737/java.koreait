@@ -2,13 +2,36 @@ package com.kita.first.level4;
 
 public class Test {
 	public static void main(String[] args) {
+		Parent p = new Parent() {
+			@Override
+			void parentMethod() {
+				System.out.println("자식 객체입니다.");
+			};
+		};
+		p.parentMethod();//새 클래스 만들 필요 없이 한번만 override 하고 싶을 때 익명객체, p라는 인스턴스 안에 위와 같이 함
+
+		Child child = new Child();
+		child.childMethod();
+		child.childMethod2(new Parent() {
+			@Override
+			void parentMethod() {};
+		});
+		//익명 개체는 객체 이름이 들어갈 수 있는 모든 곳에 들어갈 수 있다.
 		
-		ThrowsException te = new ThrowsException();
-		try {
-			te.method1();
-		}catch(Exception e) {
+		
+		
+
+		
 			
-		}
+//		ThrowsException2 te2 = new ThrowsException2();
+//
+//		try{
+//			te2.method1();
+//		}catch(Exception e) {
+//			System.out.println("숫자 입력해라");
+//		}
+		
+		
 		
 		
 		
