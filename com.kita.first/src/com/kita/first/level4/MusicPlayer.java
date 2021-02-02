@@ -1,6 +1,7 @@
 package com.kita.first.level4;
 
 public class MusicPlayer implements AkmuAlbum, IUAlbum {
+	int num3 = 34;
 	
 	@Override
 	public void playAkmuAlbum()/*public 반드시 붙여줘야함. 부모인터페이스에 public이 자동으로 붙어있어서*/ {
