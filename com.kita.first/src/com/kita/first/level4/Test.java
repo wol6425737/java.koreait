@@ -11,12 +11,12 @@ public class Test {
 			@Override
 			void parentMethod() {
 			childMethod();
-			System.out.println(childField + "자식 객체입니다.");
+			System.out.println(childField + " 자식 객체입니다.");
 			};
 		};
-		//익명개체에서 필드 메소드 만들어서 바로 사용가능하다.
+		//익명개체에서 필드 메소드 만들어서 바로 사용가능하다. 
 		
-		
+		//p.childMethod(); 익명 개체를 벗어나면 따로 사용 불가능
 		p.parentMethod();//새 클래스 만들 필요 없이 한번만 override 하고 싶을 때 익명객체, p라는 인스턴스 안에 위와 같이 함
 		
 		Child child = new Child();
@@ -33,13 +33,13 @@ public class Test {
 
 		
 			
-		ThrowsException2 te2 = new ThrowsException2();
-
-		try{
-			te2.method1();
-		}catch(Exception e) {
-			System.out.println("숫자 입력해라");
-		}
+//		ThrowsException2 te2 = new ThrowsException2();
+//
+//		try{
+//			te2.method1();
+//		}catch(Exception e) {
+//			System.out.println("숫자 입력해라");
+//		}
 		
 		
 		
